@@ -1,0 +1,39 @@
+.skills{
+    padding: 20em;
+    
+}
+
+
+.skills ul{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid #e84f4b;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.skills ul:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+.skills li{
+    padding: 10px;
+
+}
+.skills img{
+    width: 96px;
+}
+
+
+@media (max-width: 768px){
+    .skills img{
+        width: 50px;
+    }
+}
+
+@media (max-width: 400px){
+    .skills img{
+        width: 30px;
+    }
+}

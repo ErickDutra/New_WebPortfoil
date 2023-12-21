@@ -1,0 +1,117 @@
+
+footer{
+    padding: 7%;
+    background-color: rgb(14,14,14);
+    margin-top: 5%;
+    border-top: 2px solid rgb(0, 77, 128);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts ul{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255,193,7);
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    margin: 2em;
+}
+.contacts ul img{
+    width: 5rem;
+    margin: 1rem 2rem;
+    background-color: rgb(179, 134, 0);
+    border-radius: 40%;
+    padding: 20px;
+    box-shadow: inset 5px 5px 10px black;
+}
+
+.button-curriculum button{
+    padding: 5.4em;
+    width: 42em;
+    height: 6em;
+    background-color:  #e84f4b;
+    border-radius: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+}
+.name-dawnload{
+    background-color:  #a73733;
+    border-radius: 3em;
+    padding: 2em;
+    display: flex;
+    box-shadow: inset 5px 5px 10px black;
+}
+
+.button-curriculum button p{
+    font-size: 2em;
+    color: whitesmoke;
+}
+.button-curriculum a{
+    text-decoration: none;
+}
+
+
+.curriculum-dawnload{
+    border-radius: 100%; 
+    background-color:  #a73733;
+    padding: 1.5em;
+    box-shadow: inset 5px 5px 10px black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: transparent;
+}
+
+
+.curriculum-dawnload img{
+    width: 4em;
+}
+
+.box-division{
+    font-size: 3em;
+    color: #a73733;
+}
+
+@media (max-width: 1220px){
+ footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 760px){
+   
+    .contacts ul img{
+        width: 1em;
+        margin: 1em 2em;
+    }
+
+    .name-dawnload{
+        padding: 2em;  
+    }
+    .button-curriculum button{
+        padding: 3em;
+        width: 27em;
+        height: 5em;
+    }
+    .button-curriculum button p{
+        font-size: 1em;
+    }
+        
+    .curriculum-dawnload{
+        padding: 1em;
+    }
+
+
+    .curriculum-dawnload img{
+        width: 2em;
+    }
+
+    .box-division{
+        font-size: 2em;
+    }
+}

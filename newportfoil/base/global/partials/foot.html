@@ -1,0 +1,36 @@
+{% load static %}
+
+<footer>
+    <div class="contacts">
+        <ul>
+            <li>
+                <a href="mailto:deverickdutra@gmail.com" >
+                    <img src="{% static ".\home\assets\icons\gmail.svg" %}" alt="icone-gmail">
+                </a>
+            </li>
+            <li> 
+                <a href="https://www.linkedin.com/in/erick-dutra-916217211/" target="_blank">
+                    <img src="{% static ".\home\assets\icons\linkedin.svg" %}" alt="icone-linkedin" >   
+            </li>
+            <li>
+                <a href="https://github.com/ErickDutra" target="_blank">
+                    <img src="{% static ".\home\assets\icons\github.svg" %}" alt="icone-github">
+                </a> 
+            </li>
+        </ul>
+    </div>
+    <div class="button-curriculum">
+        <a href="{% static "./home/file/curriculum.pdf " %} " download >
+        <button >
+            <div class="name-dawnload">
+                <p>Baixar CV</p>
+            </div>
+            <div class="box-division"><p>|</p></div>
+            <div class="curriculum-dawnload">
+                <img src="{% static ".\home\assets\icons\arrow-dawnload.svg" %}" alt="">
+            </div>
+        </button>
+        </a>
+    </div>
+    {% include "global\partials\script-js.html" %}
+</footer>

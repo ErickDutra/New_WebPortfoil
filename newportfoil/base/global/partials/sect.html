@@ -1,0 +1,56 @@
+{% load static %}
+<section>
+    <div class="information">
+        <div class="itens">
+            <div class="photo">
+                <img src="{% static ".\home\assets\img\me.svg" %}" alt="i am erick">
+            </div>
+            <div class="info-box">
+                <h2>Erick Dutra</h2>
+                <ul>
+                    <li>
+                        <a href="mailto:deverickdutra@gmail.com" >
+                            <img src="{% static ".\home\assets\icons\gmail.svg" %}" alt="icone-gmail">
+                            <span id="profile.email">Gmail</span>
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="https://www.linkedin.com/in/erick-dutra-916217211/" target="_blank">
+                            <img src="{% static ".\home\assets\icons\linkedin.svg" %}" alt="icone-linkedin" >  
+                            <span>Linkedin</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ErickDutra" target="_blank">
+                            <img src="{% static ".\home\assets\icons\github.svg" %}" alt="icone-github">
+                            <span id="profile.job">Github</span>
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+            <div class="about-box">
+                <p class="about">
+                    Olá, pessoal! Sou o Erick, acadêmico no curso Técnico em Análise e Desenvolvimento de Sistemas. Desculpa aí pela enrolação, mas só tomei vergonha na cara e entrei de cabeça na área de tecnologia há cerca de um ano. Desde então, tô nessa jornada maluca de aprender e desbravar esse mundão digital.</p>
+                <br>
+                <p class="about"> 
+                    Tô sempre na pegada de me aprimorar, tentando tirar o melhor de mim nos estudos. E não é só bit e byte, não! Também curto uma academia e uns mergulhos, porque, né, a gente não vive só de código. Misturar uns exercícios físicos nessa receita de estudo é o segredo da felicidade, pelo menos é o que eu acho.
+                </p>   
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <ul>
+            {% block section_data %}
+                {% for icons_projects in section_data %}
+                    {% include "global\partials\skillsblock.html" %}
+                {% endfor %}
+            {% endblock section_data %}
+        </ul>
+    </div>
+    <div class="table-projects">
+        <div>
+            <h2>Projects</h2>
+        </div>
+        {% include "global\partials\projects-for.html" %}
+    </div>
+        {% include "global\partials\section-form.html" %}
+</section>

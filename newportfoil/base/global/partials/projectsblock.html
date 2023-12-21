@@ -1,0 +1,10 @@
+{% load static %}
+<li class="item-carrosel current-item " >
+    <img src="{{project.thumbnailUrl}}" alt="netflix copia login" class="project-img">
+    <a href=" {{project.url}} " target="_blank">
+        <img src="{% static ".\home\assets\icons\github.svg" %}" alt="github">
+        <p>
+            {{ project.title }}
+        </p>
+    </a>
+</li>

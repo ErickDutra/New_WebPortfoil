@@ -1,0 +1,14 @@
+{% load static %}
+<div class="projects-box">
+    <button class="arrow-left control" aria-label="Previous project"><img src="{% static ".\home\assets\icons\left.svg" %}" alt="left-arrow"></button>
+    <button class="arrow-right control" aria-label="Next project"><img src="{% static ".\home\assets\icons\right.svg" %}" alt="right-arrow"></button>
+    <div class="projects-wrapper">
+        <ul class="projects" id="profile.portfolio" >
+            {% block projects %}
+                {% for project in projects %}
+                    {% include "global\partials\projectsblock.html" %}
+                {% endfor %}
+            {% endblock projects %}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+{% load static %}
+<form class="box-input">
+    <h2>Deixe uma mensagem</h2>
+    <ul >
+        <li>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome">
+        </li>
+        <li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder=".ex:. email@email.com" >
+        </li>
+    </ul>
+    <div>
+        <label for="textarea">Mensagem:</label>
+        <textarea name="textarea" placeholder="Deixe uma Mensagem..." id="textarea" rows="10" cols="30">
+
+        </textarea>
+    </div>
+    <div>
+        <button type="submit">Enviar</button>
+    </div>
+</form>

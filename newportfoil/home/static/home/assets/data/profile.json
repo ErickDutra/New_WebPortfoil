@@ -1,0 +1,29 @@
+{
+  "portfolio": [
+      {
+        "name": "Criação de uma Pokedex (Consumindo uma API)",
+        "url": "https://github.com/ErickDutra/PokeDex",
+        "github": true
+      },
+      {
+        "name": "Calculadora - Python - (PySide)",
+        "url": "https://github.com/ErickDutra/calculadora_pyside",
+        "github": true
+      },
+      {
+        "name": "Login site - Netflix",
+        "url": "https://github.com/ErickDutra/Copia_login_Netflix",
+        "github": true
+      },
+      {
+        "name": "Questionario Flutter ",
+        "url": "https://github.com/ErickDutra/QuestionarioFlutter",
+        "github": true
+      },
+      {
+        "name": "Buscar clima (Consumindo uma API)",
+        "url": "https://github.com/ErickDutra/Buscador_de_Clima",
+        "github": true
+      }
+    ]
+}
