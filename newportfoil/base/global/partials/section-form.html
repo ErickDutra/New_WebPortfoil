@@ -1,10 +1,16 @@
 {% load static %}
-<form class="box-input">
+<form class="box-input" method="POST"  >
+    {% csrf_token %}
+
     <h2>Deixe uma mensagem</h2>
     <ul >
         <li>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" placeholder="Seu nome">
+            <label for="first_name">Nome:</label>
+            <input type="text" name="first_name" id="first_name" placeholder="Seu nome">
+        </li>
+        <li>
+            <label for="last_name">Ultimo nome:</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Seu nome">
         </li>
         <li>
             <label for="email">Email:</label>
