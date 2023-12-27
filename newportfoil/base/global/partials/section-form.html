@@ -4,25 +4,12 @@
 
     <h2>Deixe uma mensagem</h2>
     <ul >
+        {% for field in form  %}
         <li>
-            <label for="first_name">Nome:</label>
-            <input type="text" name="first_name" id="first_name" placeholder="Seu nome">
+            <label for="{{field.id_for_label}}">{{field.label}}</label>
+            {{field}}
         </li>
-        <li>
-            <label for="last_name">Ultimo nome:</label>
-            <input type="text" name="last_name" id="last_name" placeholder="Seu nome">
-        </li>
-        <li>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder=".ex:. email@email.com" >
-        </li>
-    </ul>
-    <div>
-        <label for="textarea">Mensagem:</label>
-        <textarea name="textarea" placeholder="Deixe uma Mensagem..." id="textarea" rows="10" cols="30">
-
-        </textarea>
-    </div>
+        {% endfor %}
     <div>
         <button type="submit">Enviar</button>
     </div>

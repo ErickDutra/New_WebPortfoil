@@ -21,6 +21,8 @@
 .box-input label{
     color: whitesmoke;
     font-size: 2em;
+    display: flex;
+    padding: 0.5em;
 }
 .box-input ul{
     display: block;
@@ -28,7 +30,7 @@
 }
 .box-input ul li{
     display: block;
-    padding: 1.5em;
+    padding: 1em;
 }
 
 .box-input ul input{
@@ -49,11 +51,11 @@
 }
 
 
-.box-input div textarea{
+.box-input ul textarea{
     font-size: 1.5em;
     border-radius: 10px;
     padding: 1em;
-    
+    display: block;
 }
 .box-input button{
     width: 13em;
@@ -94,7 +96,7 @@
         font-size: 2em;
         margin-bottom: 1.2em;
     }
-    .box-input div textarea{
+    .box-input  textarea{
         font-size: 0.8em;
         padding: 0.5em;
         
