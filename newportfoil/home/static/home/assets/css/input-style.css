@@ -31,7 +31,10 @@
 .box-input ul li{
     display: block;
     padding: 1em;
+    color: #e84f4b;
 }
+
+
 
 .box-input ul input{
     display: flex;
