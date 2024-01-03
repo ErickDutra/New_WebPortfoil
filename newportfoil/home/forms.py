@@ -14,7 +14,7 @@ class CommitForm(forms.ModelForm):
                      attrs= {'placeholder' : 'Primeiro nome',}
                   ),
                   'last_name': forms.TextInput(
-                     attrs= {'placeholder' : 'Ultimo nome',}
+                     attrs= {'placeholder' : 'Último nome',}
                   ),
                   'email': forms.TextInput(
                      attrs= {'placeholder' : 'email@email.com',}
@@ -33,7 +33,7 @@ class CommitForm(forms.ModelForm):
          self.add_error(
             'last_name',
             ValidationError(
-               'Segundo nome, não pode ser igual ao primeiro.',
+               'último nome, não pode ser igual ao primeiro.',
                code='invalid'
             )
          )

@@ -16,23 +16,24 @@ def index(request):
 
         if form.is_valid():
             form.save()
-            return redirect('\\')
+            return redirect('/')
 
         return render(
             request,
-            'global\index.html',
+            'home/index.html',
             context
         )
-     
+
     context = {
         'form': CommitForm(),
         'section_data': section_data,
         'projects': projects,
-    }
+            }
 
-    return render(request,
-                  'global\index.html',
-                  context,
-                  )
+    return render(
+        request,
+        'home/index.html',
+        context,
+        )
     
     
