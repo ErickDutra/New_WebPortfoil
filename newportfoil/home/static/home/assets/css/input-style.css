@@ -10,13 +10,15 @@
     box-shadow: 5px 5px 10px black;
 }
 .box-input h2{
-    font-size: 4em;
+    font-size: 3.5em;
     color: whitesmoke;
     font-family: graffit;
     text-shadow: 0px 5px 10px rgb(0, 77, 128);
     letter-spacing: 3px;
     animation: float 3s ease infinite;
     margin-bottom: 2em;
+    text-align: center;
+
 }
 .box-input label{
     color: whitesmoke;
@@ -34,6 +36,15 @@
     color: #e84f4b;
 }
 
+
+body > div:nth-child(4) > section > form > ul > div {
+    font-size: 3.5em;
+    color: whitesmoke;
+    font-family: graffit;
+    text-shadow: 0px 5px 10px rgb(0, 128, 58);
+    letter-spacing: 3px;
+    margin-bottom: 2em;
+}
 
 
 .box-input ul input{

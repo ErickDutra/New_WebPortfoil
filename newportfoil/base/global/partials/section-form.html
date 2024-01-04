@@ -1,16 +1,25 @@
 {% load static %}
-<form action="\" class="box-input" method="POST"   >
+<form action="" class="box-input" method="POST"   >
     {% csrf_token %}
-    <h2>Deixe uma mensagem</h2>
-    <ul >
-        {% for field in form  %}
-        <li>
-            <label for="{{field.id_for_label}}">{{field.label}}</label>
-            {{field}}
-            {{field.errors}}
-        </li>
-        {% endfor %}
-    <div>
-        <button type="submit">Enviar</button>
-    </div>
+
+        <ul >{% if messages %}
+            {% for message in messages %}
+                <div class="message" {{ message.tags }}>
+                    {{ message }}
+                </div>
+            {% endfor %}
+            {% else %}
+        <h2>Deixe uma mensagem</h2>
+               {% for field in form  %}
+            <li>
+                <label for="{{field.id_for_label}}">{{field.label}}</label>
+                {{field}}
+                {{field.errors}}
+            </li>
+            {% endfor %}
+        </ul>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+            {% endif %}
 </form>
