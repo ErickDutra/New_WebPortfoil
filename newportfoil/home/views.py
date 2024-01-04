@@ -40,24 +40,3 @@ def index(request):
         'home/index.html',
         context,
         )
-    
-def send(request):
-    form = CommitForm()
-    send = request.POST.get('send', 'no')
-    
-    if send == 'yes':
-        return redirect( 
-            '/send'
-        )
-    #view html
-    context = {
-        'form': form,
-        'section_data': section_data,
-        'projects': projects,
-            }
-    return render(
-        request,
-        'home/index.html',
-        context,
-        )
-
